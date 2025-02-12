@@ -1,0 +1,39 @@
+cabal-version: 3.0
+name: effectful-microlens
+version: 0.1.0.0
+license: BSD-3-Clause
+license-files: LICENSE
+copyright: Copyright (c) 2013-2016 Edward Kmett, 2015-2016 Artyom Kazak, 2018 Monadfix
+author: Edward Kmett, Artyom Kazak
+maintainer: eownerdead@disroot.org
+homepage: https://codeberg.org/eownerdead/effectful-microlens
+bug-reports: https://codeberg.org/eownerdead/effectful-microlens/issues
+synopsis: microlens support for Reader/Writer/State from effectful
+extra-source-files:
+  src/Effectful/State/Common.in
+
+
+common common
+  default-language: GHC2021
+  default-extensions:
+    CPP,
+    DataKinds,
+  ghc-options:
+    -Wall
+    -Wcompat
+    -Widentities
+  build-depends:
+    base ^>=4.18.2.1,
+
+
+library
+  import: common
+  hs-source-dirs: src
+  exposed-modules:
+    Effectful.Reader.Static.Microlens,
+    Effectful.State.Static.Local.Microlens,
+    Effectful.State.Static.Shared.Microlens,
+    Effectful.State.Dynamic.Microlens,
+  build-depends:
+    effectful-core ^>=2.3.1.0,
+    microlens ^>=0.4.13.1,
