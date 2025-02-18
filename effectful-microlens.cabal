@@ -8,9 +8,15 @@ author: Edward Kmett, Artyom Kazak
 maintainer: eownerdead@disroot.org
 homepage: https://codeberg.org/eownerdead/effectful-microlens
 bug-reports: https://codeberg.org/eownerdead/effectful-microlens/issues
-synopsis: microlens support for Reader/Writer/State from effectful
+synopsis: microlens-mtl ported to effectful
+category: Data, Effectful, Lenses
 extra-source-files:
   src/Effectful/State/Common.in
+
+
+source-repository head
+  type: git
+  location: https://codeberg.org/eownerdead/effectful-microlens
 
 
 common common
