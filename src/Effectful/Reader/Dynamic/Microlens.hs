@@ -1,3 +1,3 @@
-#define VARIANT Static
+#define VARIANT Dynamic
 
 #include "../Common.in"

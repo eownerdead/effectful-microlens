@@ -1,5 +1,6 @@
 module Effectful.State.VARIANT.Microlens
 (
+  module Effectful.State.VARIANT,
   -- * Getting
   use, preuse,
 

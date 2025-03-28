@@ -11,6 +11,7 @@ bug-reports: https://codeberg.org/eownerdead/effectful-microlens/issues
 synopsis: microlens-mtl ported to effectful
 category: Data, Effectful, Lenses
 extra-source-files:
+  src/Effectful/Reader/Common.in
   src/Effectful/State/Common.in
 
 
@@ -37,6 +38,7 @@ library
   hs-source-dirs: src
   exposed-modules:
     Effectful.Reader.Static.Microlens,
+    Effectful.Reader.Dynamic.Microlens,
     Effectful.State.Static.Local.Microlens,
     Effectful.State.Static.Shared.Microlens,
     Effectful.State.Dynamic.Microlens,
