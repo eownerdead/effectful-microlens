@@ -30,7 +30,7 @@ common common
     -Wcompat
     -Widentities
   build-depends:
-    base ^>=4.18.2.1,
+    base ^>=4.19.2.0,
 
 
 library
@@ -43,5 +43,5 @@ library
     Effectful.State.Static.Shared.Microlens,
     Effectful.State.Dynamic.Microlens,
   build-depends:
-    effectful-core ^>=2.3.1.0,
+    effectful-core ^>=2.5.1.0,
     microlens ^>=0.4.13.1,
